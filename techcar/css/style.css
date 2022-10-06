@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#nav_section {
+    background-color: #FBA92C !important;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    border-bottom: 5px solid black;
+    font-family: 'Gemunu Libre', sans-serif;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FBA92C;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: black;
+    color: #fff;
+
+}
+
+.nav-link:before {
+    content: '';
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+}
+
+a:hover:before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+#branded {
+    background-color: black;
+    color: #fff;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+
+.navbar {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid white;
+    color: #fff;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-align: left !important;
+}
+
+/* End CSS Nav */
+/* Landing page */
+
+#landing_container {
+    background: linear-gradient(to right, #040404, #000000, #656565);
+}
+
+#landing {
+    height: 100vh;
+}
+
+.car_img {
+    margin-top: 3%;
+    height: fit-content;
+    width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    .car_img {
+        margin-top: 30%;
+        height: fit-content;
+        width: 80%;
+    }
+
+    #landing {
+        height: 60vh;
+    }
+}
+
+.card {
+    border: none !important;
+}
+
+/* End CSS landing page */
+
+.car-link {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    width: 20%;
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+.cars:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-color: #2d3436;
+    opacity: 0.8;
+}
+
+.car_caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 20px;
+    background: #FBA92C;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+p {
+    font-size: 16px;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+
+.car-link {
+    text-decoration: none;
+    background: #FBA92C;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 5%;
+    font-size: large;
+    align-self: center;
+    border: 2px solid black;
+    font-weight: 200;
+}
+
+.cars {
+    background-color: #444;
+    border: 5px solid black;
+    height: 300px;
+    padding: 0 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.card-body {
+    padding: 0 0;
+    margin: 0;
+}
+
+img {
+    transition: all 0.5s;
+    height: 300px;
+    width: 100%;
+
+}
+
+.cars:hover img {
+    transform: rotate(720deg) scale(0);
+    opacity: 0;
+}
+
+.cars:before {
+    background-color: linear-gradient(to right, #040404, #000000, #656565);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.cars:hover:before {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.car-link {
+    transform: translateY(-300px);
+    transition: all 0.2s;
+}
+
+.cars:hover a {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+.car_p {
+    transform: translateY(-300px);
+    transition: all 0.2s;
+}
+
+.cars:hover p {
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+
+h2 {
+    transform: translateY(-300px);
+    transition: all 0.2s;
+}
+
+.cars:hover h2 {
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+
+#luxury {
+    border-bottom: 5px solid black;
+    background-color: #FBA92C;
+    text-align: center;
+    color: black;
+    margin-top: 10%;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+#luxury_p {
+    border-bottom: 5px solid black;
+    background-color: #FBA92C;
+    text-align: center;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {}
+
+#gap {
+
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#gap_container {
+
+    margin-bottom: 20%;
+
+}
+
+#gap_p1 {
+    border-top: 3px solid #FBA92C;
+    margin-top: 20%;
+    font-size: 8rem;
+    color: black;
+}
+
+#gap_p2 {
+    font-size: 3rem;
+    margin-top: -5%;
+    border-bottom: 3px solid #FBA92C;
+}
+
+#gap2 {
+
+    background-image: url(../images/speedcar0148.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-attachment: fixed;
+    clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+}
+
+@media screen and (max-width: 600px) {
+
+    #luxury {
+        border-bottom: 5px solid black;
+        background-color: #FBA92C;
+        text-align: center;
+        color: black;
+        margin-top: 10%;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    #luxury_p {
+        border-bottom: 5px solid black;
+        background-color: #FBA92C;
+        text-align: center;
+        text-align: center;
+        color: black;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+
+    iframe {
+        width: 100%;
+        height: 409;
+        margin-bottom: 10%;
+    }
+
+
+    #gap_p1 {
+        border-top: 3px solid #FBA92C;
+        margin-top: 20%;
+        font-size: 5rem;
+        color: black;
+    }
+
+    #gap_p2 {
+        font-size: 3rem;
+        margin-top: -5%;
+        border-bottom: 3px solid #FBA92C;
+    }
+
+}
+
+/* Cards CSS */
+
+/* Cart */
+#imgcart1 {
+    height: 100px;
+    width: 100px;
+}
+
+#imgcart2 {
+    height: 100px;
+    width: 100px;
+}
+
+#imgcart3 {
+    height: 100px;
+    width: 100px;
+}
+
+/* Video Section */
+#vid_section {
+
+    background-image: url(../images/speedcar0157.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    color: white;
+    margin: 0 0;
+    position: relative;
+    clip-path: polygon(50% 100%, 100% 86%, 100% 0, 0 0, 0 85%);
+
+}
+
+
+#vid_container {
+    margin: 10% 0;
+    align-items: center;
+    padding: 5% 10% 10% 10%;
+    background-color: rgb(255, 174, 66, 0.7);
+
+}
+
+iframe {
+    width: 100%;
+    height: 409;
+}
+
+
+
+/* End Video Section */
+/* footer */
+footer {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.fab {
+
+    color: #FBA92C;
+    font-size: 2rem;
+}
+
+.fot {
+    text-decoration: none;
+}
+
+/* end footer */
